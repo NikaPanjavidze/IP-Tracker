@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Arrow from "../images/icon-arrow.svg";
 
 const domainRegex = /^(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 function SearchBar({ setData }) {
   const [inputValue, setInputValue] = useState("");
@@ -18,7 +19,7 @@ function SearchBar({ setData }) {
 
     try {
       const response = await fetch(
-        `https://geo.ipify.org/api/v2/country,city?apiKey={INSERT_API_KEY}${
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}${
           isDomain ? "&domain=" + ip : "&ipAddress=" + ip
         }`
       );

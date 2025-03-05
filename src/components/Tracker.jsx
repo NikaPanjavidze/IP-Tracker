@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 
+const apiKey = import.meta.env.VITE_API_KEY;
+
 function Tracker({ setData, ipData }) {
+  
   useEffect(() => {
     async function setIp() {
       const response = await fetch(
-        "https://geo.ipify.org/api/v2/country,city?apiKey={INSERT_API_KEY}&ipAddress="
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=`
       );
       const data = await response.json();
       setData(data);

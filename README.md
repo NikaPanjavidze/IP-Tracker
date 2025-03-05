@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/NikaPanjavidze/IP-Tracker)
-- Live Site URL: [Add live site URL here](https://nikapanjavidze.github.io/IP-Tracker/)
+- Solution URL: (https://github.com/NikaPanjavidze/ip-tracker)
+- Live Site URL: (https://nikapanjavidze.github.io/ip-tracker/)
 
 ## My Process
 
